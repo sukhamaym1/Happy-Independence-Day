@@ -214,17 +214,17 @@ export default function App() {
       ctx.textBaseline = 'middle';
       
       const name = printName.toUpperCase();
-      let fontSize = 68;
-      ctx.font = `bold ${fontSize}px Georgia, "Times New Roman", serif`;
+      let fontSize = 52;
+      ctx.font = `italic bold ${fontSize}px Georgia, "Times New Roman", serif`;
       
       const maxWidth = canvas.width * 0.365;
-      while (ctx.measureText(name).width > maxWidth && fontSize > 38) {
+      while (ctx.measureText(name).width > maxWidth && fontSize > 34) {
         fontSize -= 1;
-        ctx.font = `bold ${fontSize}px Georgia, "Times New Roman", serif`;
+        ctx.font = `italic bold ${fontSize}px Georgia, "Times New Roman", serif`;
       }
       
       const x = canvas.width / 2;
-      const y = canvas.height * 0.462;
+      const y = canvas.height * 0.466;
       
       ctx.fillText(name, x, y);
 
