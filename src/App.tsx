@@ -173,7 +173,8 @@ export default function App() {
 
   const handleWhatsAppShare = () => {
     if (!generatedUrl) return;
-    const text = `🇮🇳 *Happy Independence Day 2026!* 🇮🇳\n\nI have a special surprise for you. Open this link to see my greeting:\n\n${generatedUrl}`;
+    const sender = userName.trim() || 'Someone';
+    const text = `🇮🇳 *Happy 80th Independence Day!* 🇮🇳\n\n${sender} has sent you a special patriotic greeting. Open this link to see your surprise: 👇\n\n${generatedUrl}`;
     window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, '_blank');
   };
 
