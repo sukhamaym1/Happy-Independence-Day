@@ -192,7 +192,7 @@ export default function App() {
   };
 
   const handleDownloadCertificate = () => {
-    const printName = senderName || userName;
+    const printName = userName || senderName;
     if (!printName) return;
     
     const canvas = document.createElement('canvas');
