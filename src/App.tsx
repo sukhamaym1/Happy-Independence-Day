@@ -369,16 +369,6 @@ export default function App() {
                 <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  onClick={handleDownloadCertificate}
-                  className="w-full py-4 px-6 bg-white text-[#000080] border-2 border-[#000080] font-bold rounded-xl shadow-md flex items-center justify-center gap-2 hover:bg-gray-50 transition-colors"
-                >
-                  <Download className="w-5 h-5" />
-                  Download Certificate
-                </motion.button>
-                
-                <motion.button
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
                   onClick={() => setShowForm(true)}
                   className="w-full py-4 px-6 bg-gradient-to-r from-[#000080] to-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-900/20 flex items-center justify-center gap-2"
                 >
