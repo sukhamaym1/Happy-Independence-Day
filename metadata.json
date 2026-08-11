@@ -1,0 +1,6 @@
+{
+  "name": "80th Independence Day Greeting",
+  "description": "Create a personalized 80th Independence Day greeting and download a custom certificate of appreciation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
